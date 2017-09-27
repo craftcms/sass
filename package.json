@@ -1,0 +1,20 @@
+{
+  "name": "craftcms-sass",
+  "version": "1.0.0",
+  "description": "Sass mixins for Craft CMS",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/craftcms/sass.git"
+  },
+  "keywords": [
+    "craftcms",
+    "sass",
+    "mixins"
+  ],
+  "author": "Brandon Kelly",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/craftcms/sass/issues"
+  },
+  "homepage": "https://github.com/craftcms/sass#readme"
+}
