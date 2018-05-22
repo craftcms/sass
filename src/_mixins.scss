@@ -46,9 +46,9 @@ $secondarySubmitHoverColor: hsl($hue, 10%, 50%);
 $secondarySubmitActiveColor: hsl($hue, 10%, 40%);
 
 // alert/notice colors
-$errorColor: $orange;
-$warningColor: $orange;
-$successColor: $green;
+$errorColor: darken($orange, 7%);
+$warningColor: $errorColor;
+$successColor: darken($green, 1%);
 $noticeColor: $blue;
 
 // UI element styles
