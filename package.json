@@ -1,6 +1,6 @@
 {
   "name": "craftcms-sass",
-  "version": "1.6.5",
+  "version": "1.6.6",
   "description": "Sass mixins for Craft CMS",
   "repository": {
     "type": "git",
