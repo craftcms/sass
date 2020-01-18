@@ -13,7 +13,7 @@ Installation via npm is recommended.
 Import the mixins into your Sass files with the `@import` directive:
 
 ```scss
-@import "../node_modules/craftcms-sass/src/mixins";
+@import "../node_modules/craftcms-sass/mixins";
 ```
 
 (The exact path will vary depending on where your `node_modules` folder is in relation to your Sass file.)
