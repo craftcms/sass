@@ -162,6 +162,36 @@ $checkboxSize: 16px;
   opacity: 0.8;
 }
 
+@mixin angle($dir: down, $color: $mediumTextColor) {
+  display: block;
+  content: '.';
+  font-size: 0;
+  width: 5px;
+  height: 5px;
+  border: solid $color;
+  border-width: 0 2px 2px 0;
+
+  @if $dir == up {
+    transform: rotate(225deg);
+  } @else if $dir == down {
+    transform: rotate(45deg);
+  } @else if $dir == left {
+    body.ltr & {
+      transform: rotate(135deg);
+    }
+    body.rtl & {
+      transform: rotate(-45deg);
+    }
+  } @else if $dir == right {
+    body.ltr & {
+      transform: rotate(-45deg);
+    }
+    body.rtl & {
+      transform: rotate(135deg);
+    }
+  }
+}
+
 @mixin clearafter {
   content: '.';
   display: block;
@@ -509,13 +539,11 @@ $checkboxSize: 16px;
 }
 
 @mixin select-arrow-styles {
-  @include icon;
+  @include angle;
   position: absolute;
   z-index: 1;
   top: calc(50% - 5px);
   @include right(9px);
-  font-size: 10px;
-  content: 'downangle';
   user-select: none;
   pointer-events: none;
 }
