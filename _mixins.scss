@@ -6,8 +6,9 @@ $grey100: hsl(212, 50%, 93%);
 $grey200: hsl(212, 30%, 85%);
 $grey300: hsl(211, 13%, 65%);
 $grey350: hsl(211, 11%, 59%);
-$grey400: hsl(211, 10%, 53%);
+$grey400: hsl(210, 10%, 53%);
 $grey500: hsl(211, 12%, 43%);
+$grey550: hsl(210, 13%, 40%);
 $grey600: hsl(209, 14%, 37%);
 $grey700: hsl(209, 18%, 30%);
 $grey800: hsl(209, 20%, 25%);
@@ -81,16 +82,16 @@ $teal800: #0C6B58;
 $teal900: #014D40;
 
 // submit button colors
-$primaryColor: #E5422B;
+$primaryColor: $red500;
 $secondaryColor: $grey350;
 
 $inputColor: hsl(212, 25%, 50%);
 
 // text colors
 $textColor: $grey700;
-$mediumDarkTextColor: $grey500;
-$mediumTextColor: $grey400;
-$lightTextColor: $grey300;
+$mediumDarkTextColor: $grey550;
+$mediumTextColor: $grey550;
+$lightTextColor: $grey500;
 $linkColor: $blue800;
 
 // hairline colors
@@ -103,8 +104,8 @@ $lightSelColor: $grey200;
 $darkSelColor: $grey600;
 
 // alert/notice colors
-$errorColor: $red400;
-$warningColor: $yellow700;
+$errorColor: $red600;
+$warningColor: $yellow800;
 $successColor: $teal500;
 $noticeColor: $blue700;
 
