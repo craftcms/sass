@@ -496,7 +496,7 @@ $checkboxSize: 16px;
 }
 
 @mixin input-focused-styles {
-  outline: none;
+  outline-color: transparent;
   border-color: transparentize($inputColor, 0.2);
 }
 
@@ -570,7 +570,7 @@ $checkboxSize: 16px;
 }
 
 @mixin select-input-focused-styles {
-  outline: none;
+  outline-color: transparent;
   background-color: transparentize($inputColor, 0.5);
 }
 
