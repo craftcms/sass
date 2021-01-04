@@ -451,7 +451,7 @@ $checkboxSize: 16px;
 
 @mixin h6-styles {
   margin: 14px 0 3px;
-  font-size: 10px;
+  font-size: px-to-rem(10px);
   line-height: 1.2;
   color: $lightTextColor;
   text-transform: uppercase;
@@ -462,8 +462,8 @@ $checkboxSize: 16px;
   display: inline-block;
   border-radius: 10px;
   padding: 2px 7px;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: px-to-rem(12px);
+  line-height: px-to-rem(14px);
   color: $textColor;
   background-color: transparentize($white, 0.5);
   box-shadow: 0 0 0 1px $darkHairlineColor;
@@ -561,8 +561,8 @@ $checkboxSize: 16px;
   max-width: 100%;
   border: none;
   @include padding(7px, 22px, 7px, 10px);
-  font-size: 14px;
-  line-height: 20px;
+  font-size: px-to-rem(14px);
+  line-height: px-to-rem(20px);
   color: $textColor;
   background-color: transparentize($inputColor, 0.75);
   appearance: none;
@@ -582,8 +582,8 @@ $checkboxSize: 16px;
 }
 
 @mixin readable {
-  font-size: 16px;
-  line-height: 22px;
+  font-size: px-to-rem(16px);
+  line-height: px-to-rem(22px);
 
   h1, h2, h3, h4, h5, h6 {
     margin: 24px 0 16px;
@@ -591,34 +591,34 @@ $checkboxSize: 16px;
   }
 
   h1 {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: px-to-rem(32px);
+    line-height: px-to-rem(40px);
     color: #000;
   }
 
   h2 {
-    font-size: 24px;
-    line-height: 30px;
+    font-size: px-to-rem(24px);
+    line-height: px-to-rem(30px);
   }
 
   h3 {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: px-to-rem(20px);
+    line-height: px-to-rem(24px);
   }
 
   h4 {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: px-to-rem(16px);
+    line-height: px-to-rem(20px);
   }
 
   h5 {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: px-to-rem(14px);
+    line-height: px-to-rem(18px);
   }
 
   h6 {
-    font-size: 13.6px;
-    line-height: 17px;
+    font-size: px-to-rem(13.6px);
+    line-height: px-to-rem(17px);
     color: $mediumTextColor;
   }
 
@@ -687,7 +687,7 @@ $checkboxSize: 16px;
         position: absolute;
         top: 12px;
         @include left(16px);
-        font-size: 30px;
+        font-size: px-to-rem(30px);
         width: 24px;
       }
     }
