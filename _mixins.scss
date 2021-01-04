@@ -125,6 +125,11 @@ $checkboxSize: 16px;
   font-size: 0.9em !important;
 }
 
+@function px-to-rem($px) {
+  $rem: $px / 16px; // 16px approximates browser default size
+  @return #{$rem}rem;
+}
+
 // Other
 
 @mixin svg-mask($color) {
