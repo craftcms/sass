@@ -173,10 +173,10 @@ $checkboxSize: px-to-rem(16px);
   display: block;
   content: '.';
   font-size: 0;
-  width: 5px;
-  height: 5px;
+  width: px-to-rem(5px);
+  height: px-to-rem(5px);
   border: solid $color;
-  border-width: 0 2px 2px 0;
+  border-width: 0 px-to-rem(2px) px-to-rem(2px) 0;
 
   @if $dir == up {
     transform: rotate(225deg);
@@ -550,8 +550,8 @@ $checkboxSize: px-to-rem(16px);
   @include angle;
   position: absolute;
   z-index: 1;
-  top: calc(50% - 5px);
-  @include right(9px);
+  top: calc(50% - px-to-rem(5px));
+  @include right(px-to-rem(9px));
   user-select: none;
   pointer-events: none;
 }
