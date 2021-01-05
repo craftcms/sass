@@ -109,12 +109,18 @@ $warningColor: $yellow800;
 $successColor: $teal500;
 $noticeColor: $blue800;
 
+// helper mixin
+@function px-to-rem($px) {
+  $rem: $px / 16px; // 16px approximates browser default size
+  @return #{$rem}rem;
+}
+
 // UI element styles
 $smallBorderRadius: 3px;
 $mediumBorderRadius: 4px;
 $largeBorderRadius: 5px;
 
-$checkboxSize: 16px;
+$checkboxSize: px-to-rem(16px);
 
 @mixin sans-serif-font {
   font-family: system-ui, BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
@@ -123,11 +129,6 @@ $checkboxSize: 16px;
 @mixin fixed-width-font {
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 0.9em !important;
-}
-
-@function px-to-rem($px) {
-  $rem: $px / 16px; // 16px approximates browser default size
-  @return #{$rem}rem;
 }
 
 // Other
