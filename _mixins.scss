@@ -650,7 +650,7 @@ $checkboxSize: px-to-rem(16px);
       position: relative;
       border-radius: 4px;
       padding: 1em;
-      @include padding-left(56px);
+      @include padding-left(px-to-rem(56px));
       border: 1px solid;
 
       &:not(.tip):not(.warning) {
@@ -686,10 +686,10 @@ $checkboxSize: px-to-rem(16px);
       &:before {
         @include icon;
         position: absolute;
-        top: 12px;
-        @include left(16px);
+        top: px-to-rem(12px);
+        @include left(px-to-rem(16px));
         font-size: px-to-rem(30px);
-        width: 24px;
+        width: px-to-rem(24px);
       }
     }
   }
