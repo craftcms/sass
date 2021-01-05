@@ -464,7 +464,7 @@ $checkboxSize: px-to-rem(16px);
   border-radius: 10px;
   padding: 2px 7px;
   font-size: px-to-rem(12px);
-  line-height: px-to-rem(14px);
+  line-height: 1.17;
   color: $textColor;
   background-color: transparentize($white, 0.5);
   box-shadow: 0 0 0 1px $darkHairlineColor;
@@ -563,7 +563,7 @@ $checkboxSize: px-to-rem(16px);
   border: none;
   @include padding(7px, 22px, 7px, 10px);
   font-size: px-to-rem(14px);
-  line-height: px-to-rem(20px);
+  line-height: 1.43;
   color: $textColor;
   background-color: transparentize($inputColor, 0.75);
   appearance: none;
@@ -584,7 +584,7 @@ $checkboxSize: px-to-rem(16px);
 
 @mixin readable {
   font-size: px-to-rem(16px);
-  line-height: px-to-rem(22px);
+  line-height: 1.38;
 
   h1, h2, h3, h4, h5, h6 {
     margin: 24px 0 16px;
@@ -593,33 +593,33 @@ $checkboxSize: px-to-rem(16px);
 
   h1 {
     font-size: px-to-rem(32px);
-    line-height: px-to-rem(40px);
+    line-height: 1.25;
     color: #000;
   }
 
   h2 {
     font-size: px-to-rem(24px);
-    line-height: px-to-rem(30px);
+    line-height: 1.25;
   }
 
   h3 {
     font-size: px-to-rem(20px);
-    line-height: px-to-rem(24px);
+    line-height: 1.2;
   }
 
   h4 {
     font-size: px-to-rem(16px);
-    line-height: px-to-rem(20px);
+    line-height: 1.25;
   }
 
   h5 {
     font-size: px-to-rem(14px);
-    line-height: px-to-rem(18px);
+    line-height: 1.29;
   }
 
   h6 {
     font-size: px-to-rem(13.6px);
-    line-height: px-to-rem(17px);
+    line-height: 1.25;
     color: $mediumTextColor;
   }
 
