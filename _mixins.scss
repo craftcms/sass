@@ -99,6 +99,10 @@ $hairlineColor: transparentize($grey800, 0.9);
 $mediumHairlineColor: transparentize($grey600, 0.75);
 $darkHairlineColor: transparentize($grey400, 0.5);
 
+// focus colors
+$lightFocusColor: $blue600;
+$darkFocusColor: $blue700;
+
 // selection colors
 $lightSelColor: $grey200;
 $darkSelColor: $grey600;
@@ -496,7 +500,7 @@ $checkboxSize: 16px;
 }
 
 @mixin input-focused-styles {
-  outline: none;
+  outline-color: transparent;
   border-color: transparentize($inputColor, 0.2);
 }
 
@@ -572,7 +576,7 @@ $checkboxSize: 16px;
 }
 
 @mixin select-input-focused-styles {
-  outline: none;
+  outline-color: transparent;
   background-color: transparentize($inputColor, 0.5);
 }
 
