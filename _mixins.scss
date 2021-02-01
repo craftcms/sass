@@ -165,7 +165,7 @@ $checkboxSize: 16px;
 
 @mixin angle($dir: down, $color: $mediumTextColor) {
   display: block;
-  content: '.';
+  content: '';
   font-size: 0;
   width: 5px;
   height: 5px;
@@ -194,7 +194,7 @@ $checkboxSize: 16px;
 }
 
 @mixin clearafter {
-  content: '.';
+  content: '';
   display: block;
   height: 0;
   clear: both;
