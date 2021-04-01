@@ -103,6 +103,10 @@ $darkHairlineColor: transparentize($grey400, 0.5);
 $lightFocusColor: $blue600;
 $darkFocusColor: $blue700;
 
+// focus rings
+$lightFocusRing: 0 0 0 1px $lightFocusColor, 0 0 0 3px transparentize($lightFocusColor, 0.5);
+$darkFocusRing: 0 0 0 1px $darkFocusColor, 0 0 0 3px transparentize($darkFocusColor, 0.5);
+
 // selection colors
 $lightSelColor: $grey200;
 $darkSelColor: $grey600;
@@ -119,6 +123,7 @@ $mediumBorderRadius: 4px;
 $largeBorderRadius: 5px;
 
 $checkboxSize: 16px;
+$radioSize: 16px;
 
 @mixin sans-serif-font {
   font-family: system-ui, BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
@@ -495,13 +500,11 @@ $checkboxSize: 16px;
   border-radius: $smallBorderRadius;
   border: 1px solid transparentize($inputColor, 0.75);
   background-color: hsl(212, 50%, 99%);
-  box-shadow: inset 0 1px 4px -1px transparentize($inputColor, 0.75);
   background-clip: padding-box;
 }
 
 @mixin input-focused-styles {
-  outline-color: transparent;
-  border-color: transparentize($inputColor, 0.2);
+  box-shadow: $darkFocusRing;
 }
 
 @mixin placeholder-styles($color) {
